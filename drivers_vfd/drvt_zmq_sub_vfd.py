@@ -50,7 +50,7 @@ class Zmq_Sub:
 
     def is_message_for_vfd(self, message):
         strstr = str(message)
-        #print("drv_zmq_sub_lfm: strstr = "+strstr)
+        print("drv_zmq_sub_lfm: strstr = "+strstr)
         index = strstr.find("VF")
         if (index!=-1):
             return True
@@ -161,7 +161,7 @@ class Zmq_Sub:
 
         #print('substring2a =', substring,'$')
         start = substring[substring.find("Start")+9:-3]
-        #print('start =', start,'$')
+        print('return label ')
 
         #label = Label_LowFreqMeter(serial,opername,velocity,unit,vo)
         label = Label_VFD(serial,opername,velocity,velocityFreq,unit,vo,start)

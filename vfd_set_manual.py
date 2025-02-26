@@ -7,6 +7,11 @@ import pytz
 import datetime
 from datetime import datetime
 
+#git config --global user.name "lotok"
+#git config --global user.email survey.stand.ukrgmc@gmail.com
+
+
+
 #copy a file or folder in Linux from a source directory to a destination directory
 #cp source_file destination_file 
 #cp /home/moxa/mxuport/readme.txt /home/user/projects/lotok/drivers/MOXA/readme.txt
@@ -170,10 +175,14 @@ def exit():
 
 if serial_port_vfd != None:
     init()
+    SetFrequency(2)
+    time.sleep(10)
     SetFrequency(3)
-    time.sleep(10)
+    time.sleep(50)
+    SetFrequency(4)
+    time.sleep(100)
     SetFrequency(5)
-    time.sleep(10)
+    time.sleep(150)
     Stop()
     exit()
 
