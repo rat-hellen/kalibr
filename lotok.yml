@@ -1,0 +1,8 @@
+sensor:
+  rs232_port: /dev/ttyMXUSB1
+  name_measurement: test_sensor
+  divide_coef: 4
+optic:
+  rs232_port: /dev/ttyMXUSB4
+  name_measurement: test_optic
+  divide_coef: 5

@@ -1,0 +1,6 @@
+sensor:
+  rs232_port: /dev/ttyMXUSB1
+  name_measurement: test_sensor
+optic:
+  rs232_port: /dev/ttyMXUSB2
+  name_measurement: test_optic

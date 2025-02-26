@@ -1,0 +1,19 @@
+запуск клиента командной строки в контейнере:
+docker exec -it influxdb influx
+документация:
+https://docs.influxdata.com/influxdb/v1.8/tools/shell/
+
+CREATE DATABASE lotok:
+database_name = 'lotok'
+port 8086 - v1.8 (url="http://localhost:8086")
+port 8087 - v2.0 (url="http://localhost:8087")
+
+1.8 установки авторизации по умолчанию
+2.0 login user, parol useruseruser
+
+документация по клиентской библиотеке
+https://docs.influxdata.com/influxdb/v1.8/
+https://docs.influxdata.com/influxdb/v2.0/
+
+примеры 
+https://github.com/influxdata/influxdb-client-python/tree/master/examples
